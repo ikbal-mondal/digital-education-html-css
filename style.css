@@ -1,0 +1,603 @@
+
+/* body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+ /* =========
+  nav start 
+ ================*/
+ 
+ *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: montserrat;
+  }
+  nav{
+    background: #ffffff;
+    height: 65px;
+    width: 97%;
+    margin: 10px auto;
+    position: relative;
+    z-index: 50;
+  }
+  .logo{
+  width: 170px;
+  height: 65px;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+   
+  }
+ .group-loc{
+    width: 18px;
+    height: 22px;
+ }
+ .loc-right-border{
+    height: 15px;
+    width: 2px;
+    background-color: black;
+ }
+ .Download-Icon{
+    width: 14px;
+    height: 13px;
+    margin-right: 5px;
+ }
+ .Download-icon-bg-color{
+    background-color: #21409A;
+    font-size: 13px;
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 14px 16px;
+    
+ }
+ .student-icon{
+    width: 14px;
+    height: 13px;
+    margin-right: 5px;
+
+ }
+ .Students-icon-text-border{
+    border:1px solid #21409A;
+    font-size: 13px;
+    color: #21409A;
+    border-radius: 30px;
+    padding: 14px 16px;
+ }
+  .checkbtn{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 850px){
+   
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 1113px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #ededed;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 2px;
+    }
+    nav ul li a{
+      font-size: 14px;
+    }
+    
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+  .icon-number {
+    background-color: #21409A;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    left: -21px;
+    top: -18px;
+}
+
+ /* =========
+  nav end
+ ================*/
+
+
+
+ /* =========
+  banner-container start
+ ================*/
+ .admission-open-info{
+    background-color: #21409A;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+ }
+
+ .underline{
+    text-decoration: underline;
+    color: #ffffff;
+    font-weight: 600;
+ }
+
+ .admission-containt{
+    display: flex;
+    justify-content: end;
+    gap: 200px;
+    width: 95%;
+    margin: 0 auto;
+ }
+
+ @media screen and (max-width: 1165px) {
+  .horizental-line-bar{
+   display: none;
+ }
+ }
+ @media screen and (max-width: 600px) {
+  .admission-containt{
+    display: flex;
+    justify-content: end;
+    gap: 60px;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 13px;
+ }
+ }
+
+ @media screen and (max-width: 800px) {
+
+  .checkbtn {
+      display: block;
+  }
+
+  ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #ededed;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+     
+  }
+
+  nav ul li {
+      display: block;
+      line-height: 2px;
+  }
+
+  .banner-heading {
+      font-size: 35px;
+  }
+
+  .banner-paragraph {
+      font-size: 16px;
+  }
+
+}
+
+ .banner-container {
+    
+    position: relative; 
+    background-image: url(images/Rectangle-banner-bg.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.banner-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #01a4e3a8; 
+}
+.banner-contain-wrapp{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap:45px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    padding: 80px 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .banner-contain-wrapp{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap:45px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    padding: 35px 0px;
+}
+
+.banner-heading{
+  color: #ffffff;
+font-family: Montserrat;
+font-size: 45px;
+font-style: normal;
+font-weight: 600;
+line-height: 50px;
+letter-spacing: 0.55px; 
+
+}
+.banner-paragraph{
+  color: #FFF;
+  text-shadow: -3px -4px 3px black;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; 
+  letter-spacing: 0.50px;  
+  margin-top: 25px;
+  margin-bottom: 25px;
+ }
+
+ }
+
+.banner-left-contain{
+    position: relative;
+    z-index: 10px;
+ 
+}
+.banner-heading{
+color: #ffffff;
+font-family: Montserrat;
+font-size: 52px;
+font-style: normal;
+font-weight: 700;
+line-height: 62.4px;
+letter-spacing: 0.78px; 
+
+}
+
+.banner-paragraph{
+    color: #FFF;
+    text-shadow: -3px -4px 3px black;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32.4px; 
+    letter-spacing: 0.72px;  
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.Admission-btn{
+    width: 195px;
+    height: 56px;
+    border-radius: 40px;
+    background: #FFF; 
+    font-size: 15px;
+    border: none;
+    box-shadow: 0px 0px 6px #443a3a;
+    color: #21409A;
+}
+
+.banner-container img{
+    width: 100%;
+}
+.banner-right-image{
+    position: relative;
+    z-index: 10px;
+}
+img.Group-slide-icons {
+    width: 62px;
+}
+.Group-slide-icons_center{
+    text-align: center;
+}
+ /* =========
+  banner-container end
+ ================*/
+
+
+ /* =========
+  Achieve Excellence with Our Programmes start
+ ================*/
+.Our-Programmes-title{
+  color: #252525;
+text-align: center;
+font-family: Montserrat;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 46.416px; 
+letter-spacing: 0.72px;
+margin-top: 62px;
+margin-bottom: 62px;
+}
+ .card-container{
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 50px;
+  padding: 30px;
+  width: 90%;
+  margin: 0 auto;
+
+ }
+
+ .card {
+  width: 100%;
+  height: 240px;
+  background-image: url("images/Ellipse-bg\ .png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  border: 1px solid #efefef;
+  background-position: left -15px;
+}
+
+.card-left-icon{
+  width: 74px;
+  height: 95px;
+}
+
+.card-title{
+  color: #252525;
+  font-family: Montserrat; 
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 15px;
+
+}
+
+.card-pera{
+  color: #333;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+
+}
+.card-contain-flex {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  gap: 82px;
+  align-content: center;
+  height: 262px;
+  margin: 0px 60px;
+}
+
+.View-our-courses-btn{
+  width: 165px;
+height: 45px;
+flex-shrink: 0; 
+border-radius: 30px;
+background: #21409A; 
+border: none;
+color: #ffffff;
+
+}
+
+
+@media screen and (min-width: 601px) and  (max-width: 709px){
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 50px;
+    padding: 30px;
+    width: 100%;
+   }
+ }
+
+ @media screen and (min-width: 710px) and  (max-width: 777px){
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 50px;
+    padding: 30px;
+   }
+
+ }
+
+ @media screen and (min-width: 711px) and  (max-width: 1050px){
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 50px;
+    padding: 30px;
+  
+   }
+
+ }
+
+
+ @media screen and (min-width: 315px) and  (max-width: 425px){
+  
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
+    padding: 30px;
+   width: 100%;
+   margin-left: -30px;
+  
+   
+   }
+
+   .card {
+    width: 100%;
+    height: 240px;
+    background-image: url("images/Ellipse-bg\ .png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    border: 1px solid #efefef;
+    background-position: left 0px;
+   
+  }
+   .card-contain-flex {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    align-content: center;
+    margin: 0px 20px;
+}
+
+.card-title{
+color: #252525;
+font-family: Montserrat; 
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+margin-bottom: 15px;
+
+}
+
+.card-pera{
+color: #333;
+font-family: Open Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+
+}
+
+.Our-Programmes-title{
+color: #252525;
+text-align: center;
+font-family: Montserrat;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+margin-top: 62px;
+margin-bottom: 62px;
+}
+
+
+ }
+ @media screen and (min-width: 426px) and  (max-width: 599px){
+  
+  .card-container{
+
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 50px;
+    padding: 30px;
+    width: 100%;
+   }
+
+   .card {
+    width: 100%;
+    height: 240px;
+    background-image: url("images/Ellipse-bg\ .png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    border: 1px solid #efefef;
+    background-position: left 0px;
+  }
+   .card-contain-flex {
+    display: flex;
+    align-items: center;
+    gap: 85px;
+    align-content: center;
+    margin: 0px 20px;
+}
+
+
+.card-title{
+  color: #252525;
+  font-family: Montserrat; 
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 15px;
+
+}
+
+.card-pera{
+  color: #333;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+
+}
+
+.Our-Programmes-title{
+  color: #252525;
+text-align: center;
+font-family: Montserrat;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 46.416px; 
+letter-spacing: 0.72px;
+margin-top: 62px;
+margin-bottom: 62px;
+}
+
+
+ }
+ /* =========
+  Achieve Excellence with Our Programmes end
+ ================*/
